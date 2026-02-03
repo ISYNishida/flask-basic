@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h2>検索結果（{{ keyword }}）</h2>
+
+{% for m in results %}
+    <p>{{ m.name }} : {{ m.comment }}</p>
+{% endfor %}
+
+<a href="/">戻る</a>
+
+{% endblock %}

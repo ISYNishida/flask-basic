@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h2>投稿フォーム</h2>
+
+<form method="post" action="/post">
+    名前：<input name="name"><br>
+    ひとこと：<input name="message"><br>
+    <input type="submit" value="送信">
+</form>
+
+
+<h2>検索</h2>
+<form method="get" action="/search">
+    名前：<input name="keyword">
+     <input type="submit" value="検索">
+</form>
+<p><a href="/list">一覧を見る</a></p>
+
+
+{% endblock %}
+

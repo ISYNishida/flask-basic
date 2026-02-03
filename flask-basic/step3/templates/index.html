@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h2 class="mb-3">投稿フォーム</h2>
+
+<form method="post" action="/post" class="mb-4">
+
+    <div class="mb-3">
+        <label class="form-label">名前</label>
+        <input name="name" class="form-control">
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">ひとこと</label>
+        <input name="message" class="form-control">
+    </div>
+
+    <button type="submit" class="btn btn-primary">
+        送信
+    </button>
+
+</form>
+
+<h3 class="mb-3">検索</h3>
+
+<form method="get" action="/search" class="mb-4">
+
+    <div class="mb-3">
+        <label class="form-label">名前</label>
+        <input name="keyword" class="form-control">
+    </div>
+
+    <button type="submit" class="btn btn-outline-secondary">
+        検索
+    </button>
+
+</form>
+
+<a href="/list" class="btn btn-link">一覧を見る</a>
+
+{% endblock %}

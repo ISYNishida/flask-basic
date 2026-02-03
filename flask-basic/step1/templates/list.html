@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>一覧</title>
+</head>
+<body>
+    <h1>一覧</h1>
+
+    {% for m in data %}
+        <p>{{ m.name }} : {{ m.comment }}</p>
+    {% endfor %}
+
+    <a href="/">戻る</a>
+</body>
+</html>
+
